@@ -1,0 +1,50 @@
+[
+  [
+    "I need a refund",
+    "billing"
+  ],
+  [
+    "My payment failed",
+    "billing"
+  ],
+  [
+    "Please explain this invoice",
+    "billing"
+  ],
+  [
+    "I was charged twice",
+    "billing"
+  ],
+  [
+    "Reset my password",
+    "account"
+  ],
+  [
+    "I cannot login",
+    "account"
+  ],
+  [
+    "Change my email address",
+    "account"
+  ],
+  [
+    "My profile is locked",
+    "account"
+  ],
+  [
+    "The app crashes",
+    "technical"
+  ],
+  [
+    "There is an error on startup",
+    "technical"
+  ],
+  [
+    "The screen stays blank",
+    "technical"
+  ],
+  [
+    "Uploads stop halfway",
+    "technical"
+  ]
+]

@@ -1,0 +1,13 @@
+text,expected,label,correct
+I need a refund,billing,billing,True
+My payment failed,billing,billing,True
+Please explain this invoice,billing,human_review,False
+I was charged twice,billing,human_review,False
+Reset my password,account,account,True
+I cannot login,account,account,True
+Change my email address,account,human_review,False
+My profile is locked,account,human_review,False
+The app crashes,technical,technical,True
+There is an error on startup,technical,technical,True
+The screen stays blank,technical,human_review,False
+Uploads stop halfway,technical,human_review,False

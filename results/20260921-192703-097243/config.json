@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:52175",
+  "output": "results",
+  "repeats": 5,
+  "duration": 4.0,
+  "rate": 30.0,
+  "timeout": 0.3,
+  "cost_per_call": 0.001,
+  "fallback_cost": 0,
+  "scenarios": [
+    "normal",
+    "outage",
+    "latency",
+    "error10",
+    "error30",
+    "error50"
+  ]
+}
