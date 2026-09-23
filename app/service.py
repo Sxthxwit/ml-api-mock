@@ -6,10 +6,13 @@ from contextlib import asynccontextmanager
 
 import httpx
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel, Field
+from typing import Literal
 
 from app.common import fallback_hierarchy
 from app.strategies import Breaker, execute
+from app.ui import DEMO_HTML
 
 
 class TicketRequest(BaseModel):
@@ -22,6 +25,13 @@ class TicketResponse(BaseModel):
     fallback_tier: str | None
     mode: str
     user_message: str
+
+
+class DemoScenarioRequest(BaseModel):
+    scenario: Literal[
+        "normal", "outage", "latency", "rate_limit",
+        "malformed", "empty", "irrelevant", "drift",
+    ]
 
 
 breaker = Breaker()
@@ -40,6 +50,31 @@ async def lifespan(app):
 
 
 app = FastAPI(title="Degradation-aware Ticket Service", lifespan=lifespan)
+
+
+@app.get("/", response_class=HTMLResponse, include_in_schema=False)
+async def demo_page():
+    """หน้า UI สำหรับพรีเซนต์ normal/degraded/human-review states."""
+    return HTMLResponse(DEMO_HTML)
+
+
+@app.put("/demo/scenario")
+async def configure_demo(value: DemoScenarioRequest):
+    """ตั้ง Mock API ให้ fault เกิดทันที ใช้เฉพาะห้องทดลอง/การสาธิต."""
+    global breaker
+    response = await app.state.client.put("/config", json={
+        "scenario": value.scenario,
+        "seed": 42,
+        "start_delay": 0,
+        "fault_start": 0,
+        "fault_duration": 600,
+        "latency": 0.02,
+        "spike_latency": 0.8,
+        "soft_failure_rate": 1,
+    })
+    response.raise_for_status()
+    breaker = Breaker()
+    return {"scenario": value.scenario, "breaker_state": breaker.state}
 
 
 @app.post("/tickets/classify", response_model=TicketResponse)

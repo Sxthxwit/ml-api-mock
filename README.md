@@ -34,7 +34,7 @@ py -3.11 -m venv .venv
 4. `app/experiment.py`: warm-up, ตั้ง config, ส่ง workload และบันทึกข้อมูล
 5. `app/analyze.py`: คำนวณ metrics และสร้างกราฟ
 6. `app/report.py`: เติมผลจริงลงในบทที่ 6–7
-7. `app/service.py`: Application API พร้อม bulkhead และข้อความ degraded mode
+7. `app/service.py` + `app/ui.py`: Application API, bulkhead และหน้า degraded-mode UX
 8. `run_all.py`: รวมคำสั่งทั้งหมดให้ใช้งานสะดวก
 
 ## A–D ทำงานอย่างไร
@@ -63,6 +63,11 @@ Prototype ใช้ `Primary → simulated secondary → small/local rules → e
 ```
 
 เรียก `POST http://127.0.0.1:8001/tickets/classify` ด้วย `{"text":"I need a refund"}` ผลมี `mode`, `source`, `fallback_tier` และข้อความสำหรับ UI เมื่อใช้ degraded mode ตัว service มี bulkhead จำกัดงาน Primary พร้อมกัน 20 รายการ
+
+หรือเปิด `http://127.0.0.1:8001/` เพื่อใช้หน้า Demo เลือก Normal, 503, 429,
+malformed, empty, irrelevant, drift หรือ latency ได้ หน้าเว็บจะแสดงสถานะสีเขียว
+`normal`, สีเหลือง `degraded` และสีน้ำเงิน `human_review` พร้อมแหล่งคำตอบและ
+fallback tier โดย endpoint `/demo/scenario` มีไว้สำหรับห้องทดลองเท่านั้น ไม่ควรเปิดใน production
 
 ## ปรับการทดลองเอง
 
@@ -112,4 +117,4 @@ Error rates เป็นความน่าจะเป็น สัดส่�
 & $pythonPath -m pytest -q
 ```
 
-ครอบคลุม deterministic fault, sliding window/half-open, fallback hierarchy, retry, circuit rejection, quality-aware breaker, 429, timeout และ fault taxonomy
+ครอบคลุม deterministic fault, sliding window/half-open, fallback hierarchy, retry, circuit rejection, quality-aware breaker, 429, timeout, fault taxonomy และ degraded-mode UI

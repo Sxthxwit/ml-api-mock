@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart LR
-    UI[Client / UI] --> APP[Application API]
+    UI[Degraded-mode Demo UI<br/>Normal / Degraded / Human Review] --> APP[Application API]
     APP --> BH[Bulkhead]
     BH --> REL[AI Reliability Layer]
     REL --> TO[Timeout]
@@ -21,4 +21,8 @@ flowchart LR
     LOGS --> ANALYSIS[Pandas Analysis + Graphs]
 ```
 
-`app/service.py` เป็น Application API สำหรับสาธิต degraded-mode response และ bulkhead ส่วน `app/experiment.py` เรียก Reliability Layer โดยตรงเพื่อควบคุมการทดลอง A–D ทุกชั้น fallback ใน prototype เป็น deterministic simulation ไม่มี provider/model/cache ภายนอกจริง จึงใช้ศึกษา control flow และ trade-off ไม่ใช่ benchmark ความแม่นยำของ LLM จริง
+`app/ui.py` เป็นหน้าเว็บสำหรับแสดงสถานะ normal/degraded/human review และเลือก fault
+scenario สำหรับการสาธิต ส่วน `app/service.py` เป็น Application API ที่ส่งข้อความ UX และใช้
+bulkhead ขณะที่ `app/experiment.py` เรียก Reliability Layer โดยตรงเพื่อควบคุมการทดลอง A–D
+ทุกชั้น fallback ใน prototype เป็น deterministic simulation ไม่มี provider/model/cache ภายนอกจริง
+จึงใช้ศึกษา control flow และ trade-off ไม่ใช่ benchmark ความแม่นยำของ LLM จริง

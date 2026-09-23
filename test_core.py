@@ -117,10 +117,33 @@ def test_degraded_service_response():
     asyncio.run(check())
 
 
+def test_degraded_mode_ui_and_demo_config():
+    async def check():
+        page = await service.demo_page()
+        html = page.body.decode()
+        assert "AI Degradation Lab" in html
+        assert "human_review" in html and "degraded" in html
+
+        async def mock_config(request):
+            payload = json.loads(request.content)
+            assert payload["scenario"] == "outage"
+            return httpx.Response(200, json={"config": payload})
+
+        async with httpx.AsyncClient(transport=httpx.MockTransport(mock_config),
+                                     base_url="http://test") as client:
+            service.app.state.client = client
+            configured = await service.configure_demo(
+                service.DemoScenarioRequest(scenario="outage")
+            )
+            assert configured == {"scenario": "outage", "breaker_state": "closed"}
+    asyncio.run(check())
+
+
 if __name__ == "__main__":
     tests = [test_repeatable_faults, test_sliding_window_and_half_open,
              test_fallback_hierarchy, test_strategies_and_quality_aware_breaker,
-             test_timeout, test_mock_failure_taxonomy, test_degraded_service_response]
+             test_timeout, test_mock_failure_taxonomy, test_degraded_service_response,
+             test_degraded_mode_ui_and_demo_config]
     for test in tests:
         test()
     print(f"{len(tests)} core tests passed (also runnable with pytest)")
