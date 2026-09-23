@@ -1,0 +1,4142 @@
+[
+  {
+    "scenario": "normal",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "normal",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "normal",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "normal",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "normal",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "normal",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "normal",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "normal",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "normal",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "normal",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "normal",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "normal",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "normal",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "normal",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "normal",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "normal",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "normal",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "normal",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "normal",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "normal",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "normal",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "normal",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "outage",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 43,
+    "fault_counts": {
+      "none": 77,
+      "outage": 43
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "outage",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 204,
+    "requests_during_outage": 121,
+    "fault_counts": {
+      "none": 83,
+      "outage": 121
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "outage",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "outage",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "outage",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 202,
+    "requests_during_outage": 121,
+    "fault_counts": {
+      "none": 81,
+      "outage": 121
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "outage",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "outage",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "outage",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 43,
+    "fault_counts": {
+      "none": 77,
+      "outage": 43
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "outage",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.014999999984866,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "outage",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.01500000001397,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "outage",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 43,
+    "fault_counts": {
+      "none": 77,
+      "outage": 43
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "outage",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 201,
+    "requests_during_outage": 119,
+    "fault_counts": {
+      "none": 82,
+      "outage": 119
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "outage",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.01500000001397,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "outage",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 41,
+    "fault_counts": {
+      "none": 79,
+      "outage": 41
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "outage",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 204,
+    "requests_during_outage": 122,
+    "fault_counts": {
+      "none": 82,
+      "outage": 122
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "outage",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.01500000001397,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "outage",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 41,
+    "fault_counts": {
+      "none": 79,
+      "outage": 41
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "outage",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 201,
+    "requests_during_outage": 119,
+    "fault_counts": {
+      "none": 82,
+      "outage": 119
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "outage",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0160000000032596,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "outage",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "outage",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0,
+    "server_requests": 60,
+    "requests_during_outage": 7,
+    "fault_counts": {
+      "none": 53,
+      "outage": 7
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "latency",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "latency",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 195,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 195
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "latency",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 90
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "latency",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.014999999984866,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 90
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "latency",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 195,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 195
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "latency",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 89
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "latency",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 89
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "latency",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "latency",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 90
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "latency",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0320000000065193,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 89
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "latency",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "latency",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 192,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 192
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "latency",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 90
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "latency",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "latency",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 190,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 190
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "latency",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0320000000065193,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 89
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "latency",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "latency",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 193,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 193
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "latency",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0320000000065193,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 89
+    }
+  },
+  {
+    "scenario": "latency",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "latency",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.014999999984866,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 90
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "error10",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 15,
+      "none": 105
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "error10",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 137,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 17,
+      "none": 120
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "error10",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 15,
+      "none": 105
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "error10",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 15,
+      "none": 105
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "error10",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 136,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 17,
+      "none": 119
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "error10",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 106
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "error10",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 106
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "error10",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 106
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "error10",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 12,
+      "none": 108
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "error10",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 12,
+      "none": 108
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "error10",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 12,
+      "none": 108
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "error10",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 133,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 13,
+      "none": 120
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "error10",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 9,
+      "none": 111
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "error10",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 9,
+      "none": 111
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "error10",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 129,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 9,
+      "none": 120
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "error10",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 9,
+      "none": 111
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "error10",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 109
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "error10",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 132,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 12,
+      "none": 120
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "error10",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 109
+    }
+  },
+  {
+    "scenario": "error10",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "error10",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 109
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "error30",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 43,
+      "none": 77
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "error30",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 174,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 58,
+      "none": 116
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "error30",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.8280000000086147,
+    "server_requests": 36,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 22
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "error30",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.8280000000086147,
+    "server_requests": 36,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 22
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "error30",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 169,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 54,
+      "none": 115
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "error30",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 22,
+      "none": 68
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "error30",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 22,
+      "none": 68
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "error30",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 33,
+      "none": 87
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "error30",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0310000000172295,
+    "server_requests": 60,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 21,
+      "none": 39
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "error30",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0160000000032596,
+    "server_requests": 60,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 21,
+      "none": 39
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "error30",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 36,
+      "none": 84
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "error30",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 166,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 48,
+      "none": 118
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "error30",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.860000000015134,
+    "server_requests": 36,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 22
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "error30",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 41,
+      "none": 79
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "error30",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 178,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 62,
+      "none": 116
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "error30",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.8439999999827705,
+    "server_requests": 36,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 22
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "error30",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 36,
+      "none": 84
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "error30",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 165,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 47,
+      "none": 118
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "error30",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.014999999984866,
+    "server_requests": 60,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 17,
+      "none": 43
+    }
+  },
+  {
+    "scenario": "error30",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "error30",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.0160000000032596,
+    "server_requests": 60,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 17,
+      "none": 43
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "error50",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 63,
+      "none": 57
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "error50",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 209,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 102,
+      "none": 107
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "error50",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.3440000000118744,
+    "server_requests": 21,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 7
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "error50",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.312999999994645,
+    "server_requests": 21,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 14,
+      "none": 7
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "error50",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 222,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 125,
+      "none": 97
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "error50",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.485000000015134,
+    "server_requests": 16,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 5
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "error50",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.500000000029104,
+    "server_requests": 15,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 4
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "error50",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 63,
+      "none": 57
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "error50",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.5,
+    "server_requests": 15,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 4
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "error50",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.5309999999881256,
+    "server_requests": 15,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 4
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "error50",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 71,
+      "none": 49
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "error50",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 224,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 126,
+      "none": 98
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "error50",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.9060000000172295,
+    "server_requests": 33,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 16,
+      "none": 17
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "error50",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 61,
+      "none": 59
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "error50",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 216,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 112,
+      "none": 104
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "error50",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.9380000000237487,
+    "server_requests": 32,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 15,
+      "none": 17
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "error50",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 63,
+      "none": 57
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "error50",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 216,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 110,
+      "none": 106
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "error50",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.077999999979511,
+    "server_requests": 29,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 15,
+      "none": 14
+    }
+  },
+  {
+    "scenario": "error50",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "error50",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 3.2969999999913853,
+    "server_requests": 22,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "server_error": 11,
+      "none": 11
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "rate_limit": 12
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 136,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120,
+      "rate_limit": 16
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0150000000139698,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 79,
+      "rate_limit": 11
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 79,
+      "rate_limit": 11
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 140,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120,
+      "rate_limit": 20
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 2.030999999959022,
+    "server_requests": 58,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 51,
+      "rate_limit": 7
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "rate_limit": 6
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "rate_limit": 17
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "rate_limit": 6
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "rate_limit": 6
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "rate_limit": 12
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 135,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120,
+      "rate_limit": 15
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0159999999741558,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 74,
+      "rate_limit": 16
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 105,
+      "rate_limit": 15
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 136,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120,
+      "rate_limit": 16
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 74,
+      "rate_limit": 16
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "rate_limit": 16
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 136,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 120,
+      "rate_limit": 16
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 78,
+      "rate_limit": 12
+    }
+  },
+  {
+    "scenario": "rate_limit",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "rate_limit",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 78,
+      "rate_limit": 12
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "malformed",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 106,
+      "malformed": 14
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "malformed",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 106,
+      "malformed": 14
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "malformed",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 80,
+      "malformed": 10
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "malformed",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 80,
+      "malformed": 10
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "malformed",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "malformed": 17
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "malformed",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0150000000139698,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "malformed": 6
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "malformed",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0150000000139698,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "malformed": 6
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "malformed",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "malformed": 17
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "malformed",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "malformed": 6
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "malformed",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "malformed": 6
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "malformed",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 109,
+      "malformed": 11
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "malformed",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 109,
+      "malformed": 11
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "malformed",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 75,
+      "malformed": 15
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "malformed",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "malformed": 16
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "malformed",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "malformed": 16
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "malformed",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0159999999741558,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 74,
+      "malformed": 16
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "malformed",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "malformed": 17
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "malformed",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "malformed": 17
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "malformed",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0150000000139698,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 79,
+      "malformed": 11
+    }
+  },
+  {
+    "scenario": "malformed",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "malformed",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 78,
+      "malformed": 12
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "empty",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 107,
+      "empty": 13
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "empty",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 106,
+      "empty": 14
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "empty",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 79,
+      "empty": 11
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "empty",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.014999999984866,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 79,
+      "empty": 11
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "empty",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "empty": 17
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "empty",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0150000000139698,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "empty": 6
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "empty",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "empty": 6
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "empty",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "empty": 17
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "empty",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.014999999984866,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "empty": 6
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "empty",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0150000000139698,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "empty": 5
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "empty",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "empty": 12
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "empty",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 109,
+      "empty": 11
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "empty",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 74,
+      "empty": 16
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "empty",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 105,
+      "empty": 15
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "empty",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 105,
+      "empty": 15
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "empty",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0159999999741558,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 73,
+      "empty": 16
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "empty",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "empty": 17
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "empty",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "empty": 16
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "empty",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 78,
+      "empty": 12
+    }
+  },
+  {
+    "scenario": "empty",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "empty",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 78,
+      "empty": 12
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 106,
+      "irrelevant": 14
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 106,
+      "irrelevant": 14
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0150000000139698,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 78,
+      "irrelevant": 11
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.014999999984866,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 79,
+      "irrelevant": 11
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "irrelevant": 17
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.014999999984866,
+    "server_requests": 89,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "irrelevant": 5
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.014999999984866,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "irrelevant": 6
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "irrelevant": 17
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 83,
+      "irrelevant": 7
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 84,
+      "irrelevant": 6
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 109,
+      "irrelevant": 11
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 109,
+      "irrelevant": 11
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 74,
+      "irrelevant": 16
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 105,
+      "irrelevant": 15
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "irrelevant": 16
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 74,
+      "irrelevant": 16
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "irrelevant": 17
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "irrelevant": 17
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0160000000032596,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 79,
+      "irrelevant": 11
+    }
+  },
+  {
+    "scenario": "irrelevant",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "irrelevant",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 1.0,
+    "server_requests": 90,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 78,
+      "irrelevant": 12
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 0,
+    "strategy": "A",
+    "config": {
+      "scenario": "drift",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 106,
+      "drift": 14
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 0,
+    "strategy": "B",
+    "config": {
+      "scenario": "drift",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "drift": 12
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 0,
+    "strategy": "C",
+    "config": {
+      "scenario": "drift",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "drift": 12
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 0,
+    "strategy": "D",
+    "config": {
+      "scenario": "drift",
+      "seed": 42,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 106,
+      "drift": 14
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 1,
+    "strategy": "B",
+    "config": {
+      "scenario": "drift",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "drift": 17
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 1,
+    "strategy": "C",
+    "config": {
+      "scenario": "drift",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "drift": 17
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 1,
+    "strategy": "D",
+    "config": {
+      "scenario": "drift",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "drift": 17
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 1,
+    "strategy": "A",
+    "config": {
+      "scenario": "drift",
+      "seed": 43,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "drift": 17
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 2,
+    "strategy": "C",
+    "config": {
+      "scenario": "drift",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "drift": 12
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 2,
+    "strategy": "D",
+    "config": {
+      "scenario": "drift",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "drift": 12
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 2,
+    "strategy": "A",
+    "config": {
+      "scenario": "drift",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "drift": 12
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 2,
+    "strategy": "B",
+    "config": {
+      "scenario": "drift",
+      "seed": 44,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 108,
+      "drift": 12
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 3,
+    "strategy": "D",
+    "config": {
+      "scenario": "drift",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "drift": 16
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 3,
+    "strategy": "A",
+    "config": {
+      "scenario": "drift",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "drift": 16
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 3,
+    "strategy": "B",
+    "config": {
+      "scenario": "drift",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 105,
+      "drift": 15
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 3,
+    "strategy": "C",
+    "config": {
+      "scenario": "drift",
+      "seed": 45,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 105,
+      "drift": 15
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 4,
+    "strategy": "A",
+    "config": {
+      "scenario": "drift",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "drift": 16
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 4,
+    "strategy": "B",
+    "config": {
+      "scenario": "drift",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "drift": 17
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 4,
+    "strategy": "C",
+    "config": {
+      "scenario": "drift",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 103,
+      "drift": 17
+    }
+  },
+  {
+    "scenario": "drift",
+    "repeat": 4,
+    "strategy": "D",
+    "config": {
+      "scenario": "drift",
+      "seed": 46,
+      "start_delay": 0.3,
+      "fault_start": 1.0,
+      "fault_duration": 1.4
+    },
+    "circuit_open_seconds": 0,
+    "server_requests": 120,
+    "requests_during_outage": 0,
+    "fault_counts": {
+      "none": 104,
+      "drift": 16
+    }
+  }
+]

@@ -6,7 +6,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.stats import t
-from app.common import LABELS, TICKETS, fallback
+from app.common import LABELS, TICKETS, fallback_hierarchy
 from app.report import write_report
 
 def macro_f1(rows):
@@ -76,7 +76,11 @@ def analyze(folder):
     summary = pd.DataFrame(summary)
     summary.to_csv(folder / 'summary.csv', index=False)
     # ประเมินกฎสำรองบน Ticket ชุดเดียวกันทั้งหมด เพิ่มจากข้อมูลที่ใช้ fallback จริง
-    fixed = pd.DataFrame([{'text': text, 'expected': expected, 'label': fallback(text)} for text, expected in TICKETS])
+    fixed_rows = []
+    for text, expected in TICKETS:
+        label, tier = fallback_hierarchy(text)
+        fixed_rows.append({'text': text, 'expected': expected, 'label': label, 'tier': tier})
+    fixed = pd.DataFrame(fixed_rows)
     fixed['correct'] = fixed.expected == fixed.label
     fixed.to_csv(folder / 'fallback_fixed_set.csv', index=False)
     fixed_precision, fixed_recall = macro_precision_recall(fixed)
@@ -84,7 +88,8 @@ def analyze(folder):
                      'macro_recall': fixed_recall, 'macro_f1': macro_f1(fixed),
                      'coverage': float((fixed.label != 'human_review').mean()), 'n': len(fixed)}
     (folder / 'fallback_fixed_metrics.json').write_text(json.dumps(fixed_metrics, indent=2), encoding='utf-8')
-    scenarios = ['normal', 'outage', 'latency', 'error10', 'error30', 'error50']
+    scenarios = ['normal', 'outage', 'latency', 'error10', 'error30', 'error50',
+                 'rate_limit', 'malformed', 'empty', 'irrelevant', 'drift']
     for metric in ['success_rate', 'p50', 'p95', 'p99', 'primary_calls', 'fallback_accuracy',
                    'recovery_seconds', 'requests_during_outage', 'estimated_cost_per_request']:
         selected = metrics[metrics.scenario == 'outage'] if metric in ['recovery_seconds', 'requests_during_outage'] else metrics
@@ -104,6 +109,8 @@ def analyze(folder):
         plt.savefig(folder / f'{metric}.png', dpi=160)
         plt.close()
     events = pd.read_json(folder / 'server_events.jsonl', lines=True)
+    events.groupby(['scenario', 'strategy', 'fault_type']).size().rename('count').reset_index().to_csv(
+        folder / 'failure_taxonomy_counts.csv', index=False)
     outage = events[(events.scenario == 'outage') & (events['repeat'] == 0)].copy()
     if len(outage):
         outage['second'] = outage.arrived.clip(lower=0).astype(int)

@@ -1,8 +1,0 @@
-{
-  "accuracy": 0.5,
-  "macro_precision": 1.0,
-  "macro_recall": 0.5,
-  "macro_f1": 0.6666666666666666,
-  "coverage": 0.5,
-  "n": 12
-}

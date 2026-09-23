@@ -1,5 +1,5 @@
 {
-  "url": "http://127.0.0.1:52175",
+  "url": "http://127.0.0.1:50862",
   "output": "results",
   "repeats": 5,
   "duration": 4.0,
@@ -7,12 +7,21 @@
   "timeout": 0.3,
   "cost_per_call": 0.001,
   "fallback_cost": 0,
+  "breaker_window": 10,
+  "breaker_min_calls": 5,
+  "breaker_failure_rate": 0.5,
+  "breaker_cooldown": 1,
   "scenarios": [
     "normal",
     "outage",
     "latency",
     "error10",
     "error30",
-    "error50"
+    "error50",
+    "rate_limit",
+    "malformed",
+    "empty",
+    "irrelevant",
+    "drift"
   ]
 }

@@ -34,7 +34,12 @@ async def run(args):
                                          fault_start=args.duration * .25, fault_duration=args.duration * .35)
                     response = await client.put('/config', json=configuration)
                     response.raise_for_status()
-                    breaker = Breaker()
+                    breaker = Breaker(
+                        window_size=args.breaker_window,
+                        minimum_calls=args.breaker_min_calls,
+                        failure_rate_threshold=args.breaker_failure_rate,
+                        cooldown=args.breaker_cooldown,
+                    )
                     epoch = response.json()['epoch']
                     tag = dict(scenario=scenario, repeat=repeat, strategy=strategy)
                     async def one(i):
@@ -59,8 +64,11 @@ async def run(args):
                     response = await client.get('/events')
                     response.raise_for_status()
                     events = response.json()
+                    fault_counts = {fault: sum(e.get('fault_type') == fault for e in events)
+                                    for fault in {e.get('fault_type', 'unknown') for e in events}}
                     runs.append(dict(**tag, config=configuration, circuit_open_seconds=open_duration,
-                                     server_requests=len(events), requests_during_outage=sum(e['during_outage'] for e in events)))
+                                     server_requests=len(events), requests_during_outage=sum(e['during_outage'] for e in events),
+                                     fault_counts=fault_counts))
                     with (output / 'server_events.jsonl').open('a', encoding='utf-8') as file:
                         for event in events:
                             file.write(json.dumps(dict(**tag, **event)) + '\n')
@@ -80,8 +88,19 @@ if __name__ == '__main__':
     parser.add_argument('--timeout', type=float, default=.3)
     parser.add_argument('--cost-per-call', type=float, default=.001)
     parser.add_argument('--fallback-cost', type=float, default=0)
-    parser.add_argument('--scenarios', nargs='+', choices=['normal', 'outage', 'latency', 'error10', 'error30', 'error50'], default=['normal', 'outage', 'latency', 'error10', 'error30', 'error50'])
+    parser.add_argument('--breaker-window', type=int, default=10)
+    parser.add_argument('--breaker-min-calls', type=int, default=5)
+    parser.add_argument('--breaker-failure-rate', type=float, default=.5)
+    parser.add_argument('--breaker-cooldown', type=float, default=1)
+    scenario_choices = ['normal', 'outage', 'latency', 'error10', 'error30', 'error50',
+                        'rate_limit', 'malformed', 'empty', 'irrelevant', 'drift']
+    parser.add_argument('--scenarios', nargs='+', choices=scenario_choices, default=scenario_choices)
     args = parser.parse_args()
-    if min(args.repeats, args.duration, args.rate, args.timeout) <= 0 or int(args.duration * args.rate) < 1 or min(args.cost_per_call, args.fallback_cost) < 0:
+    if (min(args.repeats, args.duration, args.rate, args.timeout,
+            args.breaker_window, args.breaker_min_calls, args.breaker_cooldown) <= 0
+            or not 0 < args.breaker_failure_rate <= 1
+            or args.breaker_min_calls > args.breaker_window
+            or int(args.duration * args.rate) < 1
+            or min(args.cost_per_call, args.fallback_cost) < 0):
         parser.error('repeats, duration, rate and timeout must be positive')
     asyncio.run(run(args))

@@ -35,14 +35,14 @@ def write_report(folder, metrics, summary, config, fixed):
 | --- | --- |
 | A | เรียก Primary ครั้งเดียว มี timeout ไม่มี retry |
 | B | รวมไม่เกิน 3 attempts; exponential backoff 0.05 × 2^attempt วินาที คูณ jitter ระหว่าง 0–1 |
-| C | Circuit Breaker: failure ติดต่อกัน 3 ครั้ง เปิด 1 วินาที แล้วอนุญาต probe 1 ครั้ง ไม่มี retry |
-| D | เหมือน C และใช้ keyword fallback ถ้า Primary ใช้งานไม่ได้หรือวงจรเปิด |
+| C | Quality-aware Circuit Breaker: sliding window {config['breaker_window']} calls, minimum {config['breaker_min_calls']} calls, เปิดเมื่อ failure rate ≥ {config['breaker_failure_rate']:.0%}, cooldown {config['breaker_cooldown']} วินาที และอนุญาต half-open probe 1 ครั้ง |
+| D | เหมือน C และใช้ fallback hierarchy เมื่อ Primary ใช้งานไม่ได้หรือวงจรเปิด |
 
 ทุกวิธีใช้ deadline ต่อ attempt {config['timeout']} วินาที และ connection pool สูงสุด 200 connections โดยไม่มี end-to-end SLA แยกต่างหากในรุ่นนี้ ค่า latency รวมเวลารอ retry และ fallback ภายใน request นั้น
 
 ## 6.2 สถานการณ์และวิธีดำเนินการ
 
-ทดลอง 6 สถานการณ์: normal, outage, latency spike, error 10%, 30%, 50% กรณี error ใช้ HTTP 503 เท่านั้น โหมดปกติหน่วง 0.02 วินาที; spike หน่วง 0.8 วินาที ช่วง outage/spike เริ่มที่ 25% ของระยะเวลาทดลอง และกินเวลา 35% จึงกลับเป็นปกติที่ 60% ของระยะเวลาทดลอง ความล้มเหลวตัดสินจากเวลาที่ server รับ attempt
+ทดลอง 11 สถานการณ์: normal, outage, latency spike, HTTP 503 error 10/30/50%, HTTP 429 rate limit, malformed JSON, empty output, irrelevant label และ silent drift โหมดปกติหน่วง 0.02 วินาที; spike หน่วง 0.8 วินาที ช่วง outage, latency และ soft/silent failures เริ่มที่ 25% ของระยะเวลาทดลองและกินเวลา 35% จึงกลับเป็นปกติที่ 60% ของระยะเวลาทดลอง
 
 การรันนี้ใช้ {config['repeats']} รอบต่อ strategy/scenario ระยะส่ง request รอบละ {config['duration']} วินาที อัตรา {config['rate']} requests/วินาที จึงมี {n} user requests ต่อชุด รวม {len(metrics)} ชุด หรือ {total:,} user requests ไม่รวม warm-up และ retry
 
@@ -66,6 +66,7 @@ Mock API และ runner รันเครื่องเดียวกัน
 | Requests during outage | จำนวน attempts ที่ถึง server ภายใน outage ตาม server arrival log |
 | Estimated cost/request | (จำนวน dispatched attempts × {config['cost_per_call']} + จำนวน fallback × {config['fallback_cost']}) ÷ user requests |
 | Fallback quality | accuracy, macro precision/recall/F1; human_review นับว่าไม่สำเร็จอัตโนมัติ |
+| Failure taxonomy count | จำนวน fault แต่ละประเภทจาก server log แยก scenario และ strategy |
 | Circuit-open duration | รวมเวลาสถานะ open ระหว่างวัดผล ไม่รวม half-open |
 
 ต้นทุนใช้หน่วยเงินสมมติ ไม่ใช่ราคาจริงของผู้ให้บริการและไม่ได้คำนวณ token Recovery ที่ไม่สังเกตพบหรือกรณีไม่มี fallback ใช้ N/A ไม่แทนด้วยศูนย์
@@ -102,14 +103,14 @@ outage_timeline.png แสดงรอบแรกเพื่ออธิบา
 
 ## 7.3 คุณภาพ Fallback บนชุดคงที่
 
-เมื่อทดสอบ Fallback บน Ticket ทั้ง {fixed['n']} ข้อเดียวกัน ได้ accuracy {fixed['accuracy']:.4f}, macro precision {fixed['macro_precision']:.4f}, macro recall {fixed['macro_recall']:.4f}, macro-F1 {fixed['macro_f1']:.4f} และ coverage {fixed['coverage']:.4f} รายละเอียดแต่ละข้ออยู่ใน fallback_fixed_set.csv
+เมื่อทดสอบ fallback hierarchy (secondary provider จำลอง → small/local rules → exact cache → semantic cache → rule-based → human review) บน Ticket ทั้ง {fixed['n']} ข้อเดียวกัน ได้ accuracy {fixed['accuracy']:.4f}, macro precision {fixed['macro_precision']:.4f}, macro recall {fixed['macro_recall']:.4f}, macro-F1 {fixed['macro_f1']:.4f} และ coverage {fixed['coverage']:.4f} รายละเอียดแต่ละข้อและ tier ที่ใช้จริงอยู่ใน fallback_fixed_set.csv
 
 การประเมินชุดคงที่นี้ช่วยแยกความสามารถของกฎสำรองออกจากผลของ breaker ที่เลือกส่ง Ticket บางส่วนมาเข้า Fallback ขณะที่ fallback_accuracy ในตารางด้านบนวัดเฉพาะ Ticket ที่ใช้ Fallback จริงในแต่ละรอบ การส่ง human_review ยังไม่รวมเวลาทำงานของคนและไม่นับเป็นคำตอบอัตโนมัติสำเร็จ
 
 ## 7.4 Trade-offs จากผลที่สังเกต
 
 '''
-    for scenario in ['outage', 'latency', 'error50']:
+    for scenario in ['outage', 'latency', 'error50', 'rate_limit', 'malformed', 'drift']:
         group = means[means.scenario == scenario].set_index('strategy')
         if not all(s in group.index for s in 'ABCD'):
             continue
@@ -125,8 +126,8 @@ Retry เพิ่มโอกาสผ่าน transient error แต่ใช
 
 ใช้ API จำลองและ Ticket 12 ข้อ ไม่ใช่โมเดลจริง Primary ใช้ fixture lookup ที่ถูกต้องเสมอเมื่อบริการพร้อมเพื่อแยกผล service failure ออกจาก model quality; Fallback ใช้กฎบางส่วน ไม่ได้สร้าง ground truth ด้วยกฎเดียวกัน จึงห้ามอ้างว่าผลนี้เป็นความแม่นยำของ LLM จริง รอบทดลองสั้นและจำนวนตัวอย่าง tail latency จำกัด ควรเพิ่ม duration/repeats และใช้ข้อมูลจริงก่อนสรุปทั่วไป
 
-ยังไม่จำลอง 429, malformed output หรือ drift ในชุด 6 scenarios นี้ ไม่มี secondary provider หรือ human review ที่ทำงานจริง ค่าใช้จ่ายเป็นสมมติ การแบ่ง success ตาม ground truth ทำได้ offline ในการทดลอง แต่ระบบ production อาจไม่มีคำตอบเฉลยใช้ตรวจทันที
+Secondary provider, local model, cache และ semantic cache ใน prototype เป็น deterministic simulation ไม่ใช่บริการหรือโมเดลจริง ส่วน human review เป็นสถานะส่งต่อและยังไม่มีเจ้าหน้าที่ทำงานจริง Silent drift ส่ง label ที่ถูก schema แต่ผิด ground truth จึงตรวจได้เฉพาะ offline evaluation ในต้นแบบ ไม่ถูกเปิด breaker ระหว่างให้บริการ ค่าใช้จ่ายเป็นสมมติและระบบ production อาจไม่มี ground truth ตรวจทันที
 
-ภาคผนวก: requests.json (ผลผู้ใช้), attempts.json (ทุกครั้งที่เรียก), server_events.jsonl (server arrival), runs.json (สถานะต่อชุด), metrics_per_run.csv, summary.csv, config.json, environment.json, tickets.json และ source code ใน app/
+ภาคผนวก: requests.json, attempts.json, server_events.jsonl, runs.json, metrics_per_run.csv, summary.csv, failure_taxonomy_counts.csv, config.json, environment.json, tickets.json, ARCHITECTURE.md และ source code ใน app/
 '''
     (folder / 'บทที่6-7.md').write_text(text, encoding='utf-8')

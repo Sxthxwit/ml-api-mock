@@ -1,0 +1,13 @@
+text,expected,label,tier,correct
+I need a refund,billing,billing,cache,True
+My payment failed,billing,billing,rule_based,True
+Please explain this invoice,billing,human_review,human_review,False
+I was charged twice,billing,billing,small_local_model,True
+Reset my password,account,account,rule_based,True
+I cannot login,account,account,cache,True
+Change my email address,account,account,secondary_provider,True
+My profile is locked,account,account,small_local_model,True
+The app crashes,technical,technical,rule_based,True
+There is an error on startup,technical,technical,rule_based,True
+The screen stays blank,technical,human_review,human_review,False
+Uploads stop halfway,technical,technical,secondary_provider,True
