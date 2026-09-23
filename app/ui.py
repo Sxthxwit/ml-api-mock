@@ -70,6 +70,7 @@ DEMO_HTML = r"""<!doctype html>
 <script>
 const button = document.querySelector('#submit');
 const result = document.querySelector('#result');
+let activeScenario = null;
 const show = (mode, message, label='—', source='—', tier='—') => {
   result.className = 'card ' + mode;
   document.querySelector('#mode').textContent = mode;
@@ -84,10 +85,14 @@ button.addEventListener('click', async () => {
   button.disabled = true;
   show('working', 'กำลังประมวลผล…');
   try {
-    await fetch('/demo/scenario', {
-      method: 'PUT', headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({scenario: document.querySelector('#scenario').value})
-    }).then(r => { if (!r.ok) throw new Error('ตั้งสถานการณ์ไม่สำเร็จ'); });
+    const selectedScenario = document.querySelector('#scenario').value;
+    if (selectedScenario !== activeScenario) {
+      await fetch('/demo/scenario', {
+        method: 'PUT', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({scenario: selectedScenario})
+      }).then(r => { if (!r.ok) throw new Error('ตั้งสถานการณ์ไม่สำเร็จ'); });
+      activeScenario = selectedScenario;
+    }
     const response = await fetch('/tickets/classify', {
       method: 'POST', headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({text})
